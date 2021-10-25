@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="password-container">
+      <div class="password-header">
+        <h1>Generate Your Password</h1>
+        <small>Protect Yourself</small>
+      </div>
+      <div class="password-body">
+        <!-- Password Lenght -->
+        <div class="password-content">
+          <p>Password Lerght</p>
+          <input type="number" min="5" max="15" id="len">
+        </div>
+        <hr>
+        <div class="password-content">
+          <p>Include Uppercase Letters</p>
+          <input type="checkbox" id="upperCase">
+        </div>
+        <div class="password-content">
+          <p>Include Lowercase Letters</p>
+          <input type="checkbox" id="lowerCase">
+        </div>
+        <div class="password-content">
+          <p>Include Symbols</p>
+          <input type="checkbox" id="symbols">
+        </div>
+        <div class="password-content">
+          <p>Include Numbers</p>
+          <input type="checkbox" id="numbers">
+        </div>
+        <button id="passwordBtn">Generate Password</button>
+      </div>
+      <p class="passwordText"></p>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
