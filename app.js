@@ -45,6 +45,10 @@ function generatateX() {
   if (numbers.checked) {
     xs.push(getNumber());
   }
+
+  if(xs === 0){
+    return '';
+  }
   return xs[Math.floor(Math.random()* xs.length)]
 }
 
